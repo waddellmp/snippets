@@ -1,0 +1,10 @@
+John Smith	35	Engineer	San Francisco
+Jane Doe	28	Designer	New York
+Bob Johnson	42	Manager	Chicago
+Alice Williams	31	Developer	San Francisco
+Charlie Brown	29	Designer	Boston
+Diana Ross	55	Executive	New York
+Eve Wilson	26	Developer	San Francisco
+Frank Miller	48	Manager	Chicago
+Grace Lee	33	Engineer	Boston
+Henry Taylor	40	Developer	New York
