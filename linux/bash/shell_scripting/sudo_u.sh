@@ -18,7 +18,7 @@ drops to that OS user, then `psql` connects as the matching DB superuser
 
 ## Used in this repo
 
-[`scripts/install_pg_stat_statements.sh`](install_pg_stat_statements.sh):44.
+[`scripts/install_pg_stat_statements.sh`](../../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh):44.
 
 ## See also
 

@@ -26,9 +26,9 @@ queries worth optimizing first.
 
 ## See also
 
-- [what-it-tracks](pg_stat_statements_what_it_tracks.sh) — the column meanings
-- [reset](pg_stat_statements_reset.sh) — clearing the stats
-- [install](pg_stat_statements_install.sh)
+- [what-it-tracks](what_it_tracks.sh) — the column meanings
+- [reset](reset.sh) — clearing the stats
+- [install](install.sh)
 EOF
 
 # ==============================================================================

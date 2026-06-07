@@ -21,6 +21,6 @@ Loading a library here is typically a **two-step process**:
 
 ## See also
 
-- [where-it-lives](shared_preload_libraries_where_it_lives.sh)
-- [two-step-install](shared_preload_libraries_two_step_install.sh) — the pattern in detail
+- [where-it-lives](where_it_lives.sh)
+- [two-step-install](two_step_install.sh) — the pattern in detail
 EOF

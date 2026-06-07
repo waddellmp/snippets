@@ -43,11 +43,11 @@ automates all three steps.
 
 ## See also
 
-- [what-it-tracks](pg_stat_statements_what_it_tracks.sh)
-- [read-the-stats](pg_stat_statements_read_the_stats.sh)
-- [reset](pg_stat_statements_reset.sh)
-- [configuration](pg_stat_statements_configuration.sh)
-- [../shared-preload-libraries/where-it-lives.md](shared_preload_libraries_where_it_lives.sh)
+- [what-it-tracks](what_it_tracks.sh)
+- [read-the-stats](read_the_stats.sh)
+- [reset](reset.sh)
+- [configuration](configuration.sh)
+- [../shared-preload-libraries/where-it-lives.md](../shared_preload_libraries/where_it_lives.sh)
 EOF
 
 # ==============================================================================

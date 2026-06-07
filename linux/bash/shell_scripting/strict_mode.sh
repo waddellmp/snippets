@@ -25,12 +25,12 @@ failed but the later stages produced output.
 
 ## Used in this repo
 
-[`scripts/install_pg_stat_statements.sh`](install_pg_stat_statements.sh):3
+[`scripts/install_pg_stat_statements.sh`](../../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh):3
 — first non-comment line.
 
 ## See also
 
-- [../../../linux/bash/set/strict-mode.md](../../../linux/bash/set/strict_mode.sh) —
+- [../../../linux/bash/set/strict-mode.md](strict_mode.sh) —
   full discussion
 - [../../../linux/bash/set/options-overview.md](../../../linux/bash/set/options_overview.sh) —
   the full `set` reference

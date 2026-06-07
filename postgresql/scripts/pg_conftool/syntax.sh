@@ -21,8 +21,8 @@ pg_conftool <VERSION> <CLUSTER> <ACTION> <KEY> <VALUE>
 
 ## See also
 
-- [why-use-it](pg_conftool_why_use_it.sh)
-- [common-actions](pg_conftool_common_actions.sh)
+- [why-use-it](why_use_it.sh)
+- [common-actions](common_actions.sh)
 EOF
 
 # ==============================================================================

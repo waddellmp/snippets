@@ -18,7 +18,7 @@ merely mention it.
 
 ## Used in this repo
 
-[`scripts/install_pg_stat_statements.sh`](install_pg_stat_statements.sh):32
+[`scripts/install_pg_stat_statements.sh`](../../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh):32
 — the `sed` fallback branch when `pg_conftool` is unavailable.
 
 ## See also

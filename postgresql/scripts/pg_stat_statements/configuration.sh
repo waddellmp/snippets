@@ -20,8 +20,8 @@ All knobs are in `postgresql.conf` (can be changed with `pg_conftool` or
 
 ## See also
 
-- [install](pg_stat_statements_install.sh)
-- [reset](pg_stat_statements_reset.sh)
-- [../pg-conftool/syntax.md](pg_conftool_syntax.sh) — the safe way to
+- [install](install.sh)
+- [reset](reset.sh)
+- [../pg-conftool/syntax.md](../pg_conftool/syntax.sh) — the safe way to
   set these
 EOF

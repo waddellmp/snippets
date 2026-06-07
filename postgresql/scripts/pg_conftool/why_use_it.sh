@@ -24,6 +24,6 @@ file well-formed.
 
 ## See also
 
-- [syntax](pg_conftool_syntax.sh)
-- [common-actions](pg_conftool_common_actions.sh)
+- [syntax](syntax.sh)
+- [common-actions](common_actions.sh)
 EOF

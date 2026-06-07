@@ -17,12 +17,12 @@ The `||` only runs the right-hand side if the **assignment** fails. A bare
 
 ## Used in this repo
 
-[`scripts/install_pg_stat_statements.sh`](install_pg_stat_statements.sh):13
+[`scripts/install_pg_stat_statements.sh`](../../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh):13
 — the `pg_config` version-detection pipeline.
 
 ## See also
 
-- [../../../linux/bash/substitution/or-fallback.md](../../../linux/bash/substitution/or_fallback.sh) —
+- [../../../linux/bash/substitution/or-fallback.md](or_fallback.sh) —
   full discussion
 - [../../../linux/bash/variables/parameter-defaults.md](../../../linux/bash/variables/parameter_defaults.sh) —
   the `${var:-default}` alternative

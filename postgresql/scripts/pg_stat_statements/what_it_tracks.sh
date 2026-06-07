@@ -22,7 +22,7 @@ For each distinct query (normalized by replacing literals with `$1`, `$2`,
 
 ## See also
 
-- [read-the-stats](pg_stat_statements_read_the_stats.sh) — how to query the view
-- [install](pg_stat_statements_install.sh)
-- [configuration](pg_stat_statements_configuration.sh) — what's tunable
+- [read-the-stats](read_the_stats.sh) — how to query the view
+- [install](install.sh)
+- [configuration](configuration.sh) — what's tunable
 EOF

@@ -40,10 +40,10 @@ present, so a missing PostgreSQL is never silently ignored.
 
 ## See also
 
-- [usage](pg_config_usage.sh)
-- [../shell-scripting/or-fallback.md](shell_scripting_or_fallback.sh) —
+- [usage](usage.sh)
+- [../shell-scripting/or-fallback.md](../shell_scripting/or_fallback.sh) —
   the `||` fallback idiom
-- [../../scripts/install_pg_stat_statements.sh](install_pg_stat_statements.sh)
+- [../../scripts/install_pg_stat_statements.sh](../pg_stat_statements/install_pg_stat_statements.sh)
 EOF
 
 # ==============================================================================

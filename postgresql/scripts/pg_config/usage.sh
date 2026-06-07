@@ -25,7 +25,7 @@ pg_config --pkglibdir      # where extensions like pg_stat_statements.so live
 
 ## See also
 
-- [in-this-script](pg_config_in_this_script.sh) — the version-detection pipeline
+- [in-this-script](in_this_script.sh) — the version-detection pipeline
   walkthrough
 EOF
 

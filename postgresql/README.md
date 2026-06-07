@@ -8,68 +8,82 @@ on what's actually used in scripts under this repo.
 ```
 postgresql/
 └── scripts/
-    ├── config_add_extension_to_postgresql_conf.sh
-    ├── config_file_locations.sh
-    ├── docs_README.sh
-    ├── install_pg_stat_statements.sh
-    ├── pg_config_in_this_script.sh
-    ├── pg_config_usage.sh
-    ├── pg_conftool_common_actions.sh
-    ├── pg_conftool_syntax.sh
-    ├── pg_conftool_why_use_it.sh
-    ├── pg_ctl_restart.sh
-    ├── pg_stat_statements_configuration.sh
-    ├── pg_stat_statements_install.sh
-    ├── pg_stat_statements_read_the_stats.sh
-    ├── pg_stat_statements_reset.sh
-    ├── pg_stat_statements_what_it_tracks.sh
-    ├── psql_meta_commands.sh
-    ├── shared_preload_libraries_can_and_cannot_do.sh
-    ├── shared_preload_libraries_two_step_install.sh
-    ├── shared_preload_libraries_where_it_lives.sh
-    ├── shared_preload_libraries_why_preload.sh
-    ├── shell_scripting_command_vs_which.sh
-    ├── shell_scripting_euid.sh
-    ├── shell_scripting_if_grep_else.sh
-    ├── shell_scripting_or_fallback.sh
-    ├── shell_scripting_sed_in_place.sh
-    ├── shell_scripting_strict_mode.sh
-    ├── shell_scripting_sudo_u.sh
-    ├── show_config_file.sh
-    └── show_data_directory.sh
+    ├── config/
+    │   ├── add_extension_to_postgresql_conf.sh
+    │   └── file_locations.sh
+    ├── pg_config/
+    │   ├── in_this_script.sh
+    │   └── usage.sh
+    ├── pg_conftool/
+    │   ├── common_actions.sh
+    │   ├── syntax.sh
+    │   └── why_use_it.sh
+    ├── pg_ctl/
+    │   ├── restart.sh
+    │   ├── shutdown.sh
+    │   ├── start.sh
+    │   └── status.sh
+    ├── pg_stat_statements/
+    │   ├── configuration.sh
+    │   ├── install.sh
+    │   ├── install_pg_stat_statements.sh
+    │   ├── read_the_stats.sh
+    │   ├── reset.sh
+    │   └── what_it_tracks.sh
+    ├── psql/
+    │   ├── check_connection.sh
+    │   ├── list_databases.sh
+    │   ├── meta_commands.sh
+    │   ├── show_config_file.sh
+    │   └── show_data_directory.sh
+    └── shared_preload_libraries/
+       ├── can_and_cannot_do.sh
+       ├── two_step_install.sh
+       ├── where_it_lives.sh
+       └── why_preload.sh
 ```
 
 ## Indexes
 
-- [`config_add_extension_to_postgresql_conf.sh`](scripts/config_add_extension_to_postgresql_conf.sh)
-- [`config_file_locations.sh`](scripts/config_file_locations.sh)
-- [`docs_README.sh`](scripts/docs_README.sh)
-- [`install_pg_stat_statements.sh`](scripts/install_pg_stat_statements.sh)
-- [`pg_config_in_this_script.sh`](scripts/pg_config_in_this_script.sh)
-- [`pg_config_usage.sh`](scripts/pg_config_usage.sh)
-- [`pg_conftool_common_actions.sh`](scripts/pg_conftool_common_actions.sh)
-- [`pg_conftool_syntax.sh`](scripts/pg_conftool_syntax.sh)
-- [`pg_conftool_why_use_it.sh`](scripts/pg_conftool_why_use_it.sh)
-- [`pg_ctl_restart.sh`](scripts/pg_ctl_restart.sh)
-- [`pg_stat_statements_configuration.sh`](scripts/pg_stat_statements_configuration.sh)
-- [`pg_stat_statements_install.sh`](scripts/pg_stat_statements_install.sh)
-- [`pg_stat_statements_read_the_stats.sh`](scripts/pg_stat_statements_read_the_stats.sh)
-- [`pg_stat_statements_reset.sh`](scripts/pg_stat_statements_reset.sh)
-- [`pg_stat_statements_what_it_tracks.sh`](scripts/pg_stat_statements_what_it_tracks.sh)
-- [`psql_meta_commands.sh`](scripts/psql_meta_commands.sh)
-- [`shared_preload_libraries_can_and_cannot_do.sh`](scripts/shared_preload_libraries_can_and_cannot_do.sh)
-- [`shared_preload_libraries_two_step_install.sh`](scripts/shared_preload_libraries_two_step_install.sh)
-- [`shared_preload_libraries_where_it_lives.sh`](scripts/shared_preload_libraries_where_it_lives.sh)
-- [`shared_preload_libraries_why_preload.sh`](scripts/shared_preload_libraries_why_preload.sh)
-- [`shell_scripting_command_vs_which.sh`](scripts/shell_scripting_command_vs_which.sh)
-- [`shell_scripting_euid.sh`](scripts/shell_scripting_euid.sh)
-- [`shell_scripting_if_grep_else.sh`](scripts/shell_scripting_if_grep_else.sh)
-- [`shell_scripting_or_fallback.sh`](scripts/shell_scripting_or_fallback.sh)
-- [`shell_scripting_sed_in_place.sh`](scripts/shell_scripting_sed_in_place.sh)
-- [`shell_scripting_strict_mode.sh`](scripts/shell_scripting_strict_mode.sh)
-- [`shell_scripting_sudo_u.sh`](scripts/shell_scripting_sudo_u.sh)
-- [`show_config_file.sh`](scripts/show_config_file.sh)
-- [`show_data_directory.sh`](scripts/show_data_directory.sh)
+### config/
+- [`config/add_extension_to_postgresql_conf.sh`](scripts/config/add_extension_to_postgresql_conf.sh)
+- [`config/file_locations.sh`](scripts/config/file_locations.sh)
+
+### pg_config/
+- [`pg_config/in_this_script.sh`](scripts/pg_config/in_this_script.sh)
+- [`pg_config/usage.sh`](scripts/pg_config/usage.sh)
+
+### pg_conftool/
+- [`pg_conftool/common_actions.sh`](scripts/pg_conftool/common_actions.sh)
+- [`pg_conftool/syntax.sh`](scripts/pg_conftool/syntax.sh)
+- [`pg_conftool/why_use_it.sh`](scripts/pg_conftool/why_use_it.sh)
+
+### pg_ctl/
+- [`pg_ctl/restart.sh`](scripts/pg_ctl/restart.sh)
+- [`pg_ctl/shutdown.sh`](scripts/pg_ctl/shutdown.sh)
+- [`pg_ctl/start.sh`](scripts/pg_ctl/start.sh)
+- [`pg_ctl/status.sh`](scripts/pg_ctl/status.sh)
+
+### pg_stat_statements/
+- [`pg_stat_statements/configuration.sh`](scripts/pg_stat_statements/configuration.sh)
+- [`pg_stat_statements/install.sh`](scripts/pg_stat_statements/install.sh)
+- [`pg_stat_statements/install_pg_stat_statements.sh`](scripts/pg_stat_statements/install_pg_stat_statements.sh)
+- [`pg_stat_statements/read_the_stats.sh`](scripts/pg_stat_statements/read_the_stats.sh)
+- [`pg_stat_statements/reset.sh`](scripts/pg_stat_statements/reset.sh)
+- [`pg_stat_statements/what_it_tracks.sh`](scripts/pg_stat_statements/what_it_tracks.sh)
+
+### psql/
+- [`psql/check_connection.sh`](scripts/psql/check_connection.sh)
+- [`psql/list_databases.sh`](scripts/psql/list_databases.sh)
+- [`psql/meta_commands.sh`](scripts/psql/meta_commands.sh)
+- [`psql/show_config_file.sh`](scripts/psql/show_config_file.sh)
+- [`psql/show_data_directory.sh`](scripts/psql/show_data_directory.sh)
+
+### shared_preload_libraries/
+- [`shared_preload_libraries/can_and_cannot_do.sh`](scripts/shared_preload_libraries/can_and_cannot_do.sh)
+- [`shared_preload_libraries/two_step_install.sh`](scripts/shared_preload_libraries/two_step_install.sh)
+- [`shared_preload_libraries/where_it_lives.sh`](scripts/shared_preload_libraries/where_it_lives.sh)
+- [`shared_preload_libraries/why_preload.sh`](scripts/shared_preload_libraries/why_preload.sh)
 
 ## Cross-references
 

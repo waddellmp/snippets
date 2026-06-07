@@ -25,11 +25,11 @@ into normal output a caller might be capturing.
 
 ## Used in this repo
 
-[`scripts/install_pg_stat_statements.sh`](install_pg_stat_statements.sh):6.
+[`scripts/install_pg_stat_statements.sh`](../../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh):6.
 
 ## See also
 
-- [../../../linux/bash/variables/euid.md](../../../linux/bash/variables/euid.sh) —
+- [../../../linux/bash/variables/euid.md](euid.sh) —
   full reference
 - [../../../linux/bash/variables/uid-vs-euid.md](../../../linux/bash/variables/uid_vs_euid.sh)
 EOF

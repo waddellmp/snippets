@@ -35,9 +35,9 @@ which keeps it portable to non-Debian systems.
 
 ## See also
 
-- [why-use-it](pg_conftool_why_use_it.sh)
-- [syntax](pg_conftool_syntax.sh)
-- [../../scripts/install_pg_stat_statements.sh](install_pg_stat_statements.sh)
+- [why-use-it](why_use_it.sh)
+- [syntax](syntax.sh)
+- [../../scripts/install_pg_stat_statements.sh](../pg_stat_statements/install_pg_stat_statements.sh)
 EOF
 
 # ==============================================================================

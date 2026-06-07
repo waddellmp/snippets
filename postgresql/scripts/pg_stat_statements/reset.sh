@@ -21,9 +21,9 @@ This is useful:
 
 ## See also
 
-- [read-the-stats](pg_stat_statements_read_the_stats.sh)
-- [configuration](pg_stat_statements_configuration.sh) — `pg_stat_statements.max`
-- [install](pg_stat_statements_install.sh)
+- [read-the-stats](read_the_stats.sh)
+- [configuration](configuration.sh) — `pg_stat_statements.max`
+- [install](install.sh)
 EOF
 
 # ==============================================================================

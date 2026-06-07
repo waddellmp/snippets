@@ -25,7 +25,7 @@ Where the config files live on a typical Debian/Ubuntu install.
 ## `postgresql.conf`
 
 - Shows lots of parameters, very long file
-- Contains [`shared_preload_libraries`](shared_preload_libraries_where_it_lives.sh)
+- Contains [`shared_preload_libraries`](../shared_preload_libraries/where_it_lives.sh)
   which is used to load extensions
 - Contains `max_connections` which is the maximum number of connections
 - Contains `shared_buffers` which is the amount of memory to use for
@@ -38,10 +38,10 @@ Where the config files live on a typical Debian/Ubuntu install.
 
 ## See also
 
-- [add-extension-to-postgresql-conf](config_add_extension_to_postgresql_conf.sh) —
+- [add-extension-to-postgresql-conf](add_extension_to_postgresql_conf.sh) —
   the practical edit workflow
-- [../pg-conftool/syntax.md](pg_conftool_syntax.sh) — the safe way to
+- [../pg-conftool/syntax.md](../pg_conftool/syntax.sh) — the safe way to
   edit these files
-- [../pg-config/usage.md](pg_config_usage.sh) — used to discover the
+- [../pg-config/usage.md](../pg_config/usage.sh) — used to discover the
   installed version
 EOF

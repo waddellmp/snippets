@@ -21,13 +21,13 @@ line with or without a leading `#`.
 
 ## Used in this repo
 
-[`scripts/install_pg_stat_statements.sh`](install_pg_stat_statements.sh):31
+[`scripts/install_pg_stat_statements.sh`](../../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh):31
 — the "key already present?" test.
 
 ## See also
 
 - [../../../linux/bash/commands/grep/basic-flags.md](../../../linux/bash/commands/grep/basic_flags.sh)
-- [../../../linux/bash/commands/grep/exit-status.md](../../../linux/bash/commands/grep/exit_status.sh)
+- [../../../linux/bash/commands/grep/exit-status.md](../../../postgresql/scripts/pg_ctl/status.sh)
 - [../../../linux/bash/if/if-else-fi.md](../../../linux/bash/if/if_else_fi.sh)
 EOF
 

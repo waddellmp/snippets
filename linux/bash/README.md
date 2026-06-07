@@ -8,16 +8,17 @@ inside is a focused topic.
 
 | Folder | What it covers | Used in |
 | --- | --- | --- |
-| [shebang](shebang/) | `#!/usr/bin/env bash` and why | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [set](set/) | `set -euo pipefail` and other options | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [variables](variables/) | Assignment, expansion, special vars | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [if](if/) | `if/else/fi`, `&&`, `||` | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [substitution](substitution/) | `$(...)` and `\|\|` fallback | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [pipelines](pipelines/) | Chaining commands with `\|` | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [quoting](quoting/) | `'...'`, `"..."`, why it matters | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [redirection](redirection/) | `>`, `>>`, `2>`, `>&2`, `2>&1` | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
-| [test](test/) | `[ -f ... ]`, `[ -n ... ]`, numeric tests | `postgresql/scripts/install-pg-stat-statements/setup.sh` |
+| [shebang](shebang/) | `#!/usr/bin/env bash` and why | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [set](set/) | `set -euo pipefail` and other options | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [variables](variables/) | Assignment, expansion, special vars | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [if](if/) | `if/else/fi`, `&&`, `||` | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [substitution](substitution/) | `$(...)` and `\|\|` fallback | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [pipelines](pipelines/) | Chaining commands with `\|` | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [quoting](quoting/) | `'...'`, `"..."`, why it matters | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [redirection](redirection/) | `>`, `>>`, `2>`, `>&2`, `2>&1` | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
+| [test](test/) | `[ -f ... ]`, `[ -n ... ]`, numeric tests | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
 | [commands](commands/) | Cheat-sheet references for commands used in scripts | everywhere |
+| [shell_scripting](shell_scripting/) | Executable bash idiomatic guides and walkthrough scripts | |
 
 ## Snippet index
 
@@ -67,6 +68,6 @@ inside is a focused topic.
 
 - Per-command reference lives in [`commands/`](commands/README.md)
 - The script these notes are based on is
-  [`../../postgresql/scripts/install-pg-stat-statements/setup.sh`](../../postgresql/scripts/install-pg-stat-statements/setup.sh),
-  with commentary in
-  [`../../postgresql/docs/shell-scripting/`](../../postgresql/docs/shell-scripting/)
+  [`../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh`](../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh),
+  with commentary scripts in
+  [`shell_scripting/`](shell_scripting/)

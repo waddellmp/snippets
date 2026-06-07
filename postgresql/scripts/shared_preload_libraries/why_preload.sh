@@ -17,6 +17,6 @@ restart postgresql`). A reload (`reload`) is not enough.
 
 ## See also
 
-- [where-it-lives](shared_preload_libraries_where_it_lives.sh)
-- [can-and-cannot-do](shared_preload_libraries_can_and_cannot_do.sh)
+- [where-it-lives](where_it_lives.sh)
+- [can-and-cannot-do](can_and_cannot_do.sh)
 EOF

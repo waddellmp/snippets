@@ -38,11 +38,11 @@ sudo -u postgres psql -d postgres -c "CREATE EXTENSION IF NOT EXISTS pg_stat_sta
 
 ## See also
 
-- [file-locations](config_file_locations.sh)
-- [../shared-preload-libraries/where-it-lives.md](shared_preload_libraries_where_it_lives.sh)
-- [../pg-stat-statements/install.md](pg_stat_statements_install.sh) —
+- [file-locations](file_locations.sh)
+- [../shared-preload-libraries/where-it-lives.md](../shared_preload_libraries/where_it_lives.sh)
+- [../pg-stat-statements/install.md](../pg_stat_statements/install.sh) —
   the canonical example
-- [../../scripts/install_pg_stat_statements.sh](install_pg_stat_statements.sh) —
+- [../../scripts/install_pg_stat_statements.sh](../pg_stat_statements/install_pg_stat_statements.sh) —
   the full script
 EOF
 

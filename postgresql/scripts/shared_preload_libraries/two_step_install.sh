@@ -27,9 +27,9 @@ The `install_pg_stat_statements.sh` script in this repo automates both steps.
 
 ## See also
 
-- [where-it-lives](shared_preload_libraries_where_it_lives.sh)
-- [why-preload](shared_preload_libraries_why_preload.sh)
-- [can-and-cannot-do](shared_preload_libraries_can_and_cannot_do.sh)
-- [../pg-stat-statements/install.md](pg_stat_statements_install.sh)
-- [../../scripts/install_pg_stat_statements.sh](install_pg_stat_statements.sh)
+- [where-it-lives](where_it_lives.sh)
+- [why-preload](why_preload.sh)
+- [can-and-cannot-do](can_and_cannot_do.sh)
+- [../pg-stat-statements/install.md](../pg_stat_statements/install.sh)
+- [../../scripts/install_pg_stat_statements.sh](../pg_stat_statements/install_pg_stat_statements.sh)
 EOF
