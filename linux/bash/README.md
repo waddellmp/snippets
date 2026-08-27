@@ -1,73 +1,79 @@
-# Bash snippets
+# Bash Function Script Examples
 
-Cheat-sheet style notes on bash idioms, focused on what's actually used in
-scripts under this repo. Each concept gets its own folder; each snippet
-inside is a focused topic.
+Runnable, function-based Bash script examples for core scripting concepts, syntax patterns, and Linux utilities. Each script is an executable `.sh` file containing modular functions with numbered examples and demonstration blocks.
 
-## Folders
+---
 
-| Folder | What it covers | Used in |
-| --- | --- | --- |
-| [shebang](shebang/) | `#!/usr/bin/env bash` and why | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [set](set/) | `set -euo pipefail` and other options | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [variables](variables/) | Assignment, expansion, special vars | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [if](if/) | `if/else/fi`, `&&`, `||` | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [substitution](substitution/) | `$(...)` and `\|\|` fallback | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [pipelines](pipelines/) | Chaining commands with `\|` | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [quoting](quoting/) | `'...'`, `"..."`, why it matters | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [redirection](redirection/) | `>`, `>>`, `2>`, `>&2`, `2>&1` | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [test](test/) | `[ -f ... ]`, `[ -n ... ]`, numeric tests | `postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh` |
-| [commands](commands/) | Cheat-sheet references for commands used in scripts | everywhere |
-| [shell_scripting](shell_scripting/) | Executable bash idiomatic guides and walkthrough scripts | |
+## Scripts Index
 
-## Snippet index
-
-| Snippet | Folder |
+### Shebang & Shell Options
+| Script | Description |
 | --- | --- |
-| [shebang: env bash](shebang/env-bash.md) | shebang |
-| [set: strict mode](set/strict-mode.md) | set |
-| [set: options overview](set/options-overview.md) | set |
-| [variables: assignment and reference](variables/assignment-and-reference.md) | variables |
-| [variables: expansions](variables/expansions.md) | variables |
-| [variables: special variables](variables/special-variables.md) | variables |
-| [variables: parameter defaults](variables/parameter-defaults.md) | variables |
-| [variables: $EUID](variables/euid.md) | variables |
-| [variables: $UID vs $EUID](variables/uid-vs-euid.md) | variables |
-| [if: if/else/fi](if/if-else-fi.md) | if |
-| [if: short-circuit &&/||](if/short-circuit-and-or.md) | if |
-| [substitution: command substitution](substitution/command-substitution.md) | substitution |
-| [substitution: || fallback](substitution/or-fallback.md) | substitution |
-| [pipelines: basic](pipelines/basic.md) | pipelines |
-| [pipelines: exit status](pipelines/exit-status.md) | pipelines |
-| [quoting: single vs double](quoting/single-vs-double.md) | quoting |
-| [quoting: when to quote](quoting/when-to-quote.md) | quoting |
-| [redirection: file descriptors](redirection/file-descriptors.md) | redirection |
-| [redirection: operators](redirection/operators.md) | redirection |
-| [redirection: order matters](redirection/order-matters.md) | redirection |
-| [test: file tests](test/file-tests.md) | test |
-| [test: negation](test/negation.md) | test |
-| [test: string tests](test/string-tests.md) | test |
-| [test: numeric tests](test/numeric-tests.md) | test |
+| [shebang_env_bash.sh](shebang_env_bash.sh) | Portable shebang `#!/usr/bin/env bash` and interpreter detection |
+| [set_strict_mode.sh](set_strict_mode.sh) | Standard safety options: `set -euo pipefail` |
+| [set_options_overview.sh](set_options_overview.sh) | Overview of debugging and execution flags (`-x`, `-v`, `-e`, `-u`) |
 
-## Reading order if you're new to bash
+### Variables & Expansion
+| Script | Description |
+| --- | --- |
+| [variables_assignment_and_reference.sh](variables_assignment_and_reference.sh) | Variable assignment syntax and referencing (`$VAR` vs `"$VAR"`) |
+| [variables_parameter_defaults.sh](variables_parameter_defaults.sh) | Default values and fallbacks (`${VAR:-default}`, `${VAR:=default}`) |
+| [variables_expansions.sh](variables_expansions.sh) | String manipulation, prefixes, suffixes, and replacements (`${VAR%/*}`, etc.) |
+| [variables_special_variables.sh](variables_special_variables.sh) | Builtin special variables (`$?`, `$#`, `$@`, `$$`, `$!`) |
+| [variables_euid.sh](variables_euid.sh) | Effective user ID check for root privileges (`$EUID -ne 0`) |
+| [variables_uid_vs_euid.sh](variables_uid_vs_euid.sh) | Comparison of real user ID (`$UID`) vs effective user ID (`$EUID`) |
 
-1. [shebang/env-bash](shebang/env-bash.md) — the first line
-2. [set/strict-mode](set/strict-mode.md) — the second line
-3. [variables/assignment-and-reference](variables/assignment-and-reference.md)
-   + [quoting/single-vs-double](quoting/single-vs-double.md)
-4. [if/if-else-fi](if/if-else-fi.md) +
-   [substitution/or-fallback](substitution/or-fallback.md)
-5. [substitution/command-substitution](substitution/command-substitution.md) +
-   [pipelines/basic](pipelines/basic.md)
-6. [redirection/file-descriptors](redirection/file-descriptors.md) +
-   [redirection/operators](redirection/operators.md)
-7. [test/file-tests](test/file-tests.md) +
-   [variables/euid](variables/euid.md)
+### Flow Control & Conditionals
+| Script | Description |
+| --- | --- |
+| [if_else_fi.sh](if_else_fi.sh) | Standard `if ... then ... elif ... else ... fi` blocks |
+| [if_short_circuit_and_or.sh](if_short_circuit_and_or.sh) | Short-circuit boolean chaining (`&&` and `\|\|`) |
 
-## Cross-references
+### Substitution & Pipelines
+| Script | Description |
+| --- | --- |
+| [substitution_command.sh](substitution_command.sh) | Command substitution syntax (`$(command)`) |
+| [substitution_or_fallback.sh](substitution_or_fallback.sh) | Fallback execution when commands fail or return empty |
+| [pipelines_basic.sh](pipelines_basic.sh) | Chaining commands with `\|` pipes |
+| [pipelines_exit_status.sh](pipelines_exit_status.sh) | Pipeline exit codes and `${PIPESTATUS[@]}` |
 
-- Per-command reference lives in [`commands/`](commands/README.md)
-- The script these notes are based on is
-  [`../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh`](../../postgresql/scripts/pg_stat_statements/install_pg_stat_statements.sh),
-  with commentary scripts in
-  [`shell_scripting/`](shell_scripting/)
+### Quoting & Redirection
+| Script | Description |
+| --- | --- |
+| [quoting_single_vs_double.sh](quoting_single_vs_double.sh) | Literal strings (`'...'`) vs variable expansion (`"..."`) |
+| [quoting_when_to_quote.sh](quoting_when_to_quote.sh) | Preventing word splitting and glob expansion |
+| [redirection_operators.sh](redirection_operators.sh) | Basic redirection (`>`, `>>`, `<`, `2>`, `&>`) |
+| [redirection_order_matters.sh](redirection_order_matters.sh) | Stream redirection ordering (`2>&1 >file` vs `>file 2>&1`) |
+| [redirection_file_descriptors.sh](redirection_file_descriptors.sh) | Managing file descriptors (`stdin=0`, `stdout=1`, `stderr=2`, custom FDs) |
+
+### Tests & Expressions (`[` / `test`)
+| Script | Description |
+| --- | --- |
+| [test_file_operators.sh](test_file_operators.sh) | File checks (`-f`, `-d`, `-e`, `-r`, `-w`, `-x`, `-s`) |
+| [test_string_operators.sh](test_string_operators.sh) | String comparisons (`-z`, `-n`, `=`, `!=`) |
+| [test_numeric_operators.sh](test_numeric_operators.sh) | Integer comparisons (`-eq`, `-ne`, `-lt`, `-le`, `-gt`, `-ge`) |
+| [test_negation.sh](test_negation.sh) | Inverting tests with `!` |
+
+### Core Commands & Utilities
+| Script | Description |
+| --- | --- |
+| [awk_print_field.sh](awk_print_field.sh) | Print specific whitespace-delimited columns |
+| [awk_variables_and_fields.sh](awk_variables_and_fields.sh) | Working with `$1`, `$NF`, `NR`, `FS`, and custom variables |
+| [awk_patterns.sh](awk_patterns.sh) | Conditional filtering with regex matches and range patterns |
+| [command_bypass_aliases.sh](command_bypass_aliases.sh) | Run built-in/binary ignoring user aliases or shell functions |
+| [command_which_replacement.sh](command_which_replacement.sh) | Checking binary existence portably (`command -v`) |
+| [cut_fields.sh](cut_fields.sh) | Extracting delimited fields (`cut -d: -f1`) |
+| [cut_characters.sh](cut_characters.sh) | Extracting specific character offsets (`cut -c1-10`) |
+| [echo_basic.sh](echo_basic.sh) | Printing output and escape sequences (`-e`, `-n`) |
+| [echo_redirection.sh](echo_redirection.sh) | Writing output to stderr or files |
+| [exit_codes.sh](exit_codes.sh) | Standard exit status conventions (`0`, `1`, `127`) |
+| [grep_basic_flags.sh](grep_basic_flags.sh) | Matching text patterns (`-i`, `-v`, `-c`, `-n`, `-q`, `-E`) |
+| [grep_exit_status.sh](grep_exit_status.sh) | Using `grep -q` as a conditional test |
+| [psql_connect.sh](psql_connect.sh) | Connecting to PostgreSQL database instances |
+| [psql_meta_commands.sh](psql_meta_commands.sh) | Interactive and scripted psql meta-commands (`\l`, `\dt`, `\dn`, `\x`) |
+| [psql_create_extension.sh](psql_create_extension.sh) | Installing PostgreSQL extensions via psql |
+| [sed_replace.sh](sed_replace.sh) | Stream substitution (`s/find/replace/g`) |
+| [sed_in_place.sh](sed_in_place.sh) | In-place file edits (`sed -i`) |
+| [sed_anchors_regex.sh](sed_anchors_regex.sh) | Regex matching with `^`, `$`, capture groups, and backreferences |
+| [sudo_run_as_user.sh](sudo_run_as_user.sh) | Running commands as another user (`sudo -u postgres ...`) |
+| [systemctl_service_control.sh](systemctl_service_control.sh) | Managing systemd services (`start`, `stop`, `restart`, `status`, `reload`) |
